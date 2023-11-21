@@ -249,7 +249,7 @@ const UnderMapButtons = (props: {
                         setPlay(!play) 
                     }
                 }>
-                        <span>Cancel</span><span className="material-icons">
+                        <span>Cancel</span><span classNposeame="material-icons">
                             cancel
                         </span>
                         

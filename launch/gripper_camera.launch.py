@@ -31,7 +31,7 @@ def generate_launch_description():
                 {'camera_name': 'gripper_camera'},
                 {'io_method': 'mmap'}
             ],
-            remappings=[('/image_raw', '/gripper_camera/image_raw')]
+            remappings=[('/image_raw', '/gripper_camera/color/image_rect_raw')]
         ),
         # You can add more nodes or configurations here if needed.
     ])

@@ -72,10 +72,12 @@ class ConfigureVideoStreams(Node):
         self.camera_perspective_service = self.create_service(CameraPerspective, 'camera_perspective', self.camera_perspective_callback)
 
         # Default image perspectives
-        self.camera_perspective = {"overhead": "nav", "realsense": "default", "gripper": "d405"}
+        # self.camera_perspective = {"overhead": "nav", "realsense": "default", "gripper": "d405"}
+        self.camera_perspective = {"overhead": "nav", "realsense": "default", "gripper": "default"}
         self.overhead_camera_perspective = 'nav'
         self.realsense_camera_perspective = 'default'
-        self.gripper_camera_perspective = 'd405'
+        # self.gripper_camera_perspective = 'd405'
+        self.gripper_camera_perspective = 'default'
 
         # Service for enabling the depth AR overlay on the realsense stream
         self.depth_ar_service = self.create_service(DepthAR, 'depth_ar', self.depth_ar_callback)
